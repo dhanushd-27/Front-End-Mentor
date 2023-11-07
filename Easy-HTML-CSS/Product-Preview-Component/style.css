@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(30, 38%, 92%);
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+main{
+    grid-column: 2/ 3;
+    grid-row: 2/ 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* First child of main */
+#pic{
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* Second child of main */
+#about{
+    display: grid;
+    background-color: white;
+    padding: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#about *{
+    margin: 5px;
+}
+
+#about h4{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+#perfume-name{
+    text-align: left;
+    font-size:  32px;
+    line-height: 32px;
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+}
+
+#about #description{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#about #price{
+    display: flex;
+    margin: 0;
+}
+
+#price h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: hsl(158, 36%, 37%);
+    margin-right: 10px;
+}
+
+#price span{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+#about button{
+    height: 45px;
+    width: 93%;
+    border: 0;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about button:hover{
+    background-color: hsl(157, 40%, 22%);
+}
+
+
