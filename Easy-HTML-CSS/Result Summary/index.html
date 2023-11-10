@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    img{ margin: 10px;}
+    h5{ margin: 10px;}
+    span{ color: hsl(224, 30%, 27%); font-weight: bolder; margin-left: 55px;}
+    .score{ color: hsl(223, 17%, 65%);}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <main>
+      <!-- Blue Container -->
+      <section id="blue-container">
+        <h4 id="res">Your Result</h4>
+      
+        <div id="score-container">  
+          <p id="result">76</p>
+          <p id="max-result">of 100</p>
+        </div>
+    
+        <h3 id="remark">Great</h3>
+        <p id="comment">You scored higher than 65% of the people who have taken these tests.</p>
+      </section>
+      
+      <!-- Summary Section -->
+      <section id="summary">
+        <h4 id="summ">Summary</h4>
+    
+        <article>
+          <div id="red-section" class="category">
+            <img src="./assets/images/icon-reaction.svg" alt="">
+            <h5 id="red">Reaction</h5>
+            <p class="score"><span>80</span> / 100</p>
+          </div>
+        
+          <div id="yellow-section" class="category">
+            <img src="./assets/images/icon-memory.svg" alt="">
+            <h5 id="yellow">Memory</h5>
+            <p class="score"><span>92</span> / 100</p>
+          </div>
+        
+          <div id="green-section" class="category">
+            <img src="./assets/images/icon-verbal.svg" alt="">
+            <h5 id="green">Verbal</h5>
+            <p class="score"><span>61</span> / 100</p>
+          </div>
+        
+          <div id="blue-section" class="category">
+            <img src="./assets/images/icon-visual.svg" alt="">
+            <h5 id="blue">Visual</h5>
+            <p class="score"><span>72</span> / 100</p>
+          </div>
+        </article>
+    
+        <button type="button">Continue</button>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="attribution">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
+        <p>Coded by <a href="https://github.com/yup-itsOrca">yup-itsOrca</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
